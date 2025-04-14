@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3 category001</title>
-    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9b701099f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- added font sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- ADLaM Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+
+    <style>
+        .font-sora {
+            font-family: "Sora", sans-serif;
+        }
+
+        .font-ADLaM {
+            font-family: "ADLaM Display", system-ui;
+        }
+    </style>
+
 </head>
-<body>
-    
+
+<body class="font-sora">
+    <header class="bg-[#FFF9F4] ">
+        <div class="navbar container mx-auto ">
+            <div class="navbar-start">
+                <img src="c1-assets/logo-header.png" alt="">
+                <a class=" hidden md:block text-xl">Browse <span class="text-[#FFDC26]">4</span>Pets</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a Pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="hidden md:block">
+                    <i class="fa-regular fa-bell p-1"></i><i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn mr-5 border-2 border-[#FFDC26]"> Login</a>
+                <a class="btn bg-[#FFDC26] ">Register</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
+                    <li><a>Find a Pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+        <div class="flex-row p-2 lg:relative bg-white  ">
+            <div class="w-full md:w-3/5">
+                <h1 class="font-ADLaM text-4xl font-normal">Pamper Your Pet,<br> Because They Deserve <br>the Bes</h1>
+                <p class="text-xl opacity-70 mt-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn px-4 py-2 bg-[#FFDC26] text-xl font-normal mt-6">Find a pet</button>
+            </div>
+            <div class="lg:relative bottom-16\
+             ml-52 lg:w-2/3">
+                <img class="" src="c1-assets/cat-big.png" alt="">
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
