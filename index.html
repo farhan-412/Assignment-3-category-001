@@ -35,7 +35,7 @@
 </head>
 
 <body class="font-sora">
-    <header class="bg-[#FFF9F4] ">
+    <header class="bg-[#FFF9F4] hover:animate-spin">
         <div class="navbar container mx-auto ">
             <div class="navbar-start">
                 <img src="c1-assets/logo-header.png" alt="">
@@ -73,7 +73,7 @@
         </div>
     </header>
 
-    <main class="">
+    <main >
 
         <!-- hero section -->
         <div class=" p-2 lg:relative bg-white container mx-auto ">
@@ -84,7 +84,7 @@
                 <button class="btn px-4 py-2 bg-[#FFDC26] text-xl font-normal mt-6">Find a pet</button>
             </div>
             <div class="lg:relative lg:bottom-64 lg:w-full lg:h-80">
-                <img src="c1-assets/cat-big.png" alt="">
+                <img class="hover:animate-bounce" src="c1-assets/cat-big.png" alt="">
             </div>
         </div>
 
@@ -173,7 +173,8 @@
                         </div>
                         <button class="btn bg-white ml-6 w-36">Shop Now </button>
                         <div class="h-[150px]">
-                            <img class="h-[28 pr-4 pb-30px] relative bottom-40 left-32" src="c1-assets/cute-pet-small.png" alt="">
+                            <img class="h-[28 pr-4 pb-30px] relative bottom-40 left-32"
+                                src="c1-assets/cute-pet-small.png" alt="">
                         </div>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-5 mt-6">
@@ -300,36 +301,120 @@
             </div>
         </section>
 
+        <!-- cat breed -->
+        <div class="container mx-auto mt-6">
+            <div>
+              <h2 class="font-bold text-3xl font-ADLaM pt-4">Cats Breeds</h2>
+            </div>
+            <div class="flex-1 md:flex gap-10">
+              <div>
+                <h2 class="font-bold text-2xl pt-2">Siberian Breeds</h2>
+                <div class="w-full md:w-[440px] md:h-[440px]">
+                  <img class="rounded-lg" src="c1-assets/Siberian Breeds.jpg" alt="">
+                </div>
+                
+              </div>
+              <div>
+                <h2 class="text-2xl font-bold pt-2">Norweign Forest Breeds</h2>
+                <div class="w-full md:w-[440px] md:h-[440px]">
+                  <img class="rounded-lg" src="c1-assets/Norwegian-forest-breeds.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
         <!-- Everyday price -->
-        <section class="my-16 container mx-auto">
-            <h1 class="font-ADLaM text-3xl">Everyday Low Price</h1>
-            <div class="lg:grid lg:grid-cols-2 gap-6 mt-6 ">
-                <div class="lg:flex rounded-lg bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] ">
-                    <div class="flex justify-center items-center overflow-hidden ">
-                        <div class="ml-10 space-y-3">
-                            <h1 class="sm:hidden text-xl text-black">Under Price</h1>
-                            <h3 class="text-3xl font-bold">Pet Grooming Mitt</h3>
-                            <p class="text-sm text-white">(Easy Hair Removal)</p><br>
-                            <p class="text-6xl font-bold">$7.99</p>
+        <section>
+            <div class=" grid-flow-row container mx-auto lg:mt-20">
+                <div class="mt-20">
+                    <h2 class="text-3xl font-bold font-ADLaM ">Everyday low Price</h2>
+                </div>
+                <div class="grid lg:flex gap-6">
+                    <div
+                        class="w-96 h-96 lg:mt-6 lg:flex lg:w-[784px] lg:h-[480px] mt-6  rounded-lg bg-gradient-to-r from-purple-200 to-blue-300">
+                        <div class="flex justify-center items-center overflow-hidden">
+                            <div class="lg:ml-10 space-y-4">
+                                <h1 class="text-xl text-black">Under Price</h1>
+                                <h3 class="text-3xl font-bold">Pet Grooming Mitt</h3>
+                                <p class="font-ADLaM text-sm text-white">(Easy Hair Removal)</p>
+                                <p class="font-ADLaM text-5xl ">$7.99</p>
+                            </div>
                         </div>
-                        <div>
-                            <img src="c1-assets/cute-dog-mid.png" alt="">
+                        <div class="mb-8">
+                            <img class="relative w-2/3 left-36 bottom-24 md:w-full md:left-0 md:bottom-0"
+                                src="c1-assets/cute-dog-mid.png" alt="">
+                        </div>
+                    </div>
+                    <div
+                        class="h-96 w-96 mt-6  rounded-lg lg:w-[512px] lg:h-[480px] bg-gradient-to-r from-yellow-50 to-yellow-200">
+                        <div class="pt-12 pl-8 space-y-2">
+                            <h3 class="text-2xl font-bold">T- Shirt For Dogs</h3>
+                            <p class="text-5xl font-bold text-yellow-300">$7.99</p>
+                            <div>
+                                <img class="relative w-2/3 left-24 bottom-16 md:w-4/5 md:left-10 md:bottom-10"
+                                    src="c1-assets/cute-pet-mid.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sm:mt-6 bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] flex rounded-lg">
-                   <div class="ml-6 mt-6 space-y-3 ">
-                    <h1 class="text-xl  mt-16">T-Shirt For Dogs</h1>
-                    <p class="text-6xl font-bold">$7.99</p>
-                   </div>
-                   <div>
-                    <img src="c1-assets/cute-pet-mid.png" alt="">
-                   </div>
+
+        </section>
+
+        <!-- contact section -->
+        <div class="container mx-auto bg-[#FFF9F4] rounded-lg relative top-36 w-4/5 md:w-full">
+            <div class="md:flex md:justify-center md:items-center ">
+                <div>
+                    <div class="pt-8 pl-16 md:pl-32">
+                        <img class="w-4/5" src="c1-assets/cute-pet-mid.png" alt="">
+                    </div>
+                </div>
+                <div class="space-y-6 py-6 md:ml-64 text-center md:text-left">
+                    <h2 class="text-3xl font-ADLaM">Get Pawsome News!</h2>
+                    <p class="text-xl ">Exclusive training tips, ticks, product deals and more.</p>
+                    <div><input class="w-[250px] h-[60px] rounded-lg px-2" type="text" placeholder="Enter email..."></div>
+                    <button class="w-[164px] h-[45px] bg-yellow-400 rounded-xl ">Subscribe</button>
                 </div>
             </div>
-        </section>
+
+        </div>
     </main>
 
+    <!-- footer section -->
+    <footer>
+        <footer class="footer h-[525px] bg-[#f5e180] text-base-content p-10">
+            <div class="flex-1 md:flex md:justify-between sm:space-y-6  gap-x-52 mx-auto my-auto mt-40  ">
+                <div class="space-y-4">
+                    <div class="flex">
+                        <div>
+                            <img src="c1-assets/logo-footer.png" alt="">
+                        </div>
+                        <div>
+                            <a class="hidden md:block p-2 text-xl font-bold">Browse<span
+                                    class=" text-[#FFDC26] ">4</span>Pets</a>
+                        </div>
+                    </div>
+                    <div >
+                        <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends
+                        </p>
+                    </div>
+                </div>
+                <div >
+                    <ul class="space-y-2">
+                        <li>Find a Pet</li>
+                        <li>Breeds</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Follow Us</p>
+                    <div class="space-x-6 ">
+                        <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i
+                            class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+    </footer>
 </body>
 
 </html>
